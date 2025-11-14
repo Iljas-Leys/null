@@ -1,2 +1,4 @@
 dataset_price_paid_records/price_paid_records.csv
+cleaned_encoded_price_paid_records.csv
+cleaned_price_paid_records.csv
 /venv*
