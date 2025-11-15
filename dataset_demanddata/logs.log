@@ -17105,3 +17105,63 @@ Styler.applymap has been deprecated. Use Styler.map instead.
 2025-11-15 22:26:00,648:INFO:_display_container: 2
 2025-11-15 22:26:00,649:INFO:AutoARIMA(random_state=123, sp=12, suppress_warnings=True)
 2025-11-15 22:26:00,649:INFO:compare_models() successfully completed......................................
+2025-11-15 23:00:20,859:WARNING:c:\Users\thoma\ACS\Machine Learning\CloudAI\Project\null\venv_pycaret\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning:
+
+'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+
+
+2025-11-15 23:00:20,859:WARNING:c:\Users\thoma\ACS\Machine Learning\CloudAI\Project\null\venv_pycaret\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning:
+
+'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+
+
+2025-11-15 23:00:20,859:WARNING:c:\Users\thoma\ACS\Machine Learning\CloudAI\Project\null\venv_pycaret\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning:
+
+'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+
+
+2025-11-15 23:00:21,160:INFO:Visual Rendered Successfully
+2025-11-15 23:01:49,659:INFO:Initializing finalize_model()
+2025-11-15 23:01:49,659:INFO:finalize_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000002668BB734D0>, estimator=AutoARIMA(random_state=123, sp=12, suppress_warnings=True), fit_kwargs=None, groups=None, model_only=False, experiment_custom_tags=None)
+2025-11-15 23:01:49,675:INFO:Finalizing AutoARIMA(random_state=123, sp=12, suppress_warnings=True)
+2025-11-15 23:01:49,680:INFO:Initializing create_model()
+2025-11-15 23:01:49,680:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000002668BB734D0>, estimator=AutoARIMA(random_state=123, sp=12, suppress_warnings=True), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=False, metrics=None, display=None, model_only=False, return_train_score=False, error_score=0.0, kwargs={})
+2025-11-15 23:01:49,680:INFO:Checking exceptions
+2025-11-15 23:01:49,683:INFO:Importing libraries
+2025-11-15 23:01:49,683:INFO:Copying training dataset
+2025-11-15 23:01:49,684:INFO:Defining folds
+2025-11-15 23:01:49,684:INFO:Declaring metric variables
+2025-11-15 23:01:49,684:INFO:Importing untrained model
+2025-11-15 23:01:49,684:INFO:Declaring custom model
+2025-11-15 23:01:49,687:INFO:Auto ARIMA Imported successfully
+2025-11-15 23:01:49,687:INFO:Cross validation set to False
+2025-11-15 23:01:49,687:INFO:Fitting Model
+2025-11-15 23:09:13,209:INFO:Initializing finalize_model()
+2025-11-15 23:09:13,209:INFO:finalize_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000002668BB734D0>, estimator=AutoARIMA(random_state=123, sp=12, suppress_warnings=True), fit_kwargs=None, groups=None, model_only=False, experiment_custom_tags=None)
+2025-11-15 23:09:13,215:INFO:Finalizing AutoARIMA(random_state=123, sp=12, suppress_warnings=True)
+2025-11-15 23:09:13,220:INFO:Initializing create_model()
+2025-11-15 23:09:13,221:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000002668BB734D0>, estimator=AutoARIMA(random_state=123, sp=12, suppress_warnings=True), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=False, metrics=None, display=None, model_only=False, return_train_score=False, error_score=0.0, kwargs={})
+2025-11-15 23:09:13,221:INFO:Checking exceptions
+2025-11-15 23:09:13,223:INFO:Importing libraries
+2025-11-15 23:09:13,224:INFO:Copying training dataset
+2025-11-15 23:09:13,224:INFO:Defining folds
+2025-11-15 23:09:13,224:INFO:Declaring metric variables
+2025-11-15 23:09:13,225:INFO:Importing untrained model
+2025-11-15 23:09:13,225:INFO:Declaring custom model
+2025-11-15 23:09:13,227:INFO:Auto ARIMA Imported successfully
+2025-11-15 23:09:13,228:INFO:Cross validation set to False
+2025-11-15 23:09:13,228:INFO:Fitting Model
+2025-11-15 23:12:50,353:INFO:ForecastingPipeline(steps=[('forecaster',
+                            TransformedTargetForecaster(steps=[('model',
+                                                                AutoARIMA(random_state=123,
+                                                                          sp=12,
+                                                                          suppress_warnings=True))]))])
+2025-11-15 23:12:50,353:INFO:create_model() successfully completed......................................
+2025-11-15 23:12:50,709:INFO:_master_model_container: 18
+2025-11-15 23:12:50,710:INFO:_display_container: 3
+2025-11-15 23:12:50,724:INFO:ForecastingPipeline(steps=[('forecaster',
+                            TransformedTargetForecaster(steps=[('model',
+                                                                AutoARIMA(random_state=123,
+                                                                          sp=12,
+                                                                          suppress_warnings=True))]))])
+2025-11-15 23:12:50,724:INFO:finalize_model() successfully completed......................................
