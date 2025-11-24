@@ -1,4 +1,4 @@
-git clone https://github.com/Iljas-Leys/null
 cd ..
+git pull
 rm .venv
 python -m venv .venv
