@@ -1,0 +1,650 @@
+2025-11-24 22:52:43,292:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-11-24 22:52:44,818:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 22:52:44,818:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 22:52:44,818:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 22:52:44,818:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 22:52:45,749:INFO:Initializing load_model()
+2025-11-24 22:52:45,749:INFO:load_model(model_name=./dataset_demanddata/best_model, platform=None, authentication=None, verbose=True)
+2025-11-24 22:52:45,810:INFO:Initializing load_model()
+2025-11-24 22:52:45,811:INFO:load_model(model_name=./dataset_price_paid_records/house_price_pycaret_model, platform=None, authentication=None, verbose=True)
+2025-11-24 22:52:46,367:WARNING:C:\Users\iljas\Desktop\machine learning\machine learning aws\Project\venv\lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.1', 'setuptools': '80.9.0', 'pycaret': '3.3.2', 'IPython': '8.37.0', 'ipywidgets': '8.1.8', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.5', 'imblearn': '0.14.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.62.1', 'requests': '2.32.5', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '1.2.0', 'schemdraw': '0.15', 'statsmodels': '0.14.5', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.1.1', 'markupsafe': '3.0.3', 'pickle5': 'Not installed', 'cloudpickle': '3.1.2', 'deprecation': '2.1.0', 'xxhash': '3.6.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.2.1', 'setuptools': '80.9.0', 'pycaret': '3.3.2', 'IPython': '8.29.0', 'ipywidgets': '8.1.8', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.5', 'imblearn': '0.14.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.62.1', 'requests': '2.32.5', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '1.2.0', 'schemdraw': '0.15', 'statsmodels': '0.14.5', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.1.2', 'deprecation': '2.1.0', 'xxhash': '3.6.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2025-11-24 22:54:06,041:INFO:Initializing predict_model()
+2025-11-24 22:54:06,041:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021DD363BCD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['year', 'month'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['property_type', 'old_or_new',
+                                             'duration', 'town_or_city',
+                                             'district', 'county'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 Transform...
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['town_or_city', 'district',
+                                             'county'],
+                                    transformer=TargetEncoder(cols=['town_or_city',
+                                                                    'district',
+                                                                    'county'],
+                                                              handle_missing='return_nan'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model', LGBMRegressor(n_jobs=-1, random_state=42))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021DD364F2E0>)
+2025-11-24 22:54:06,041:INFO:Checking exceptions
+2025-11-24 22:54:06,042:INFO:Preloading libraries
+2025-11-24 22:54:06,042:INFO:Set up data.
+2025-11-24 22:54:06,046:INFO:Set up index.
+2025-11-24 22:54:33,236:INFO:Initializing predict_model()
+2025-11-24 22:54:33,236:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021DD363A050>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['year', 'month'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['property_type', 'old_or_new',
+                                             'duration', 'town_or_city',
+                                             'district', 'county'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 Transform...
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['town_or_city', 'district',
+                                             'county'],
+                                    transformer=TargetEncoder(cols=['town_or_city',
+                                                                    'district',
+                                                                    'county'],
+                                                              handle_missing='return_nan'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model', LGBMRegressor(n_jobs=-1, random_state=42))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021DD364DFC0>)
+2025-11-24 22:54:33,236:INFO:Checking exceptions
+2025-11-24 22:54:33,236:INFO:Preloading libraries
+2025-11-24 22:54:33,237:INFO:Set up data.
+2025-11-24 22:54:33,240:INFO:Set up index.
+2025-11-24 22:57:55,177:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-11-24 22:57:56,565:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 22:57:56,566:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 22:57:56,566:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 22:57:56,566:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 22:57:57,520:INFO:Initializing load_model()
+2025-11-24 22:57:57,520:INFO:load_model(model_name=./dataset_demanddata/best_model, platform=None, authentication=None, verbose=True)
+2025-11-24 22:57:57,568:INFO:Initializing load_model()
+2025-11-24 22:57:57,569:INFO:load_model(model_name=./dataset_price_paid_records/house_price_pycaret_model, platform=None, authentication=None, verbose=True)
+2025-11-24 22:57:57,929:WARNING:C:\Users\iljas\Desktop\machine learning\machine learning aws\Project\venv\lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.1', 'setuptools': '80.9.0', 'pycaret': '3.3.2', 'IPython': '8.37.0', 'ipywidgets': '8.1.8', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.5', 'imblearn': '0.14.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.62.1', 'requests': '2.32.5', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '1.2.0', 'schemdraw': '0.15', 'statsmodels': '0.14.5', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.1.1', 'markupsafe': '3.0.3', 'pickle5': 'Not installed', 'cloudpickle': '3.1.2', 'deprecation': '2.1.0', 'xxhash': '3.6.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.2.1', 'setuptools': '80.9.0', 'pycaret': '3.3.2', 'IPython': '8.29.0', 'ipywidgets': '8.1.8', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.5', 'imblearn': '0.14.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.62.1', 'requests': '2.32.5', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '1.2.0', 'schemdraw': '0.15', 'statsmodels': '0.14.5', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.1.2', 'deprecation': '2.1.0', 'xxhash': '3.6.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2025-11-24 23:01:15,233:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-11-24 23:01:16,513:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:01:16,513:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:01:16,513:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:01:16,513:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:02:27,436:INFO:PyCaret TSForecastingExperiment
+2025-11-24 23:02:27,436:INFO:Logging name: ts-default-name
+2025-11-24 23:02:27,436:INFO:ML Usecase: MLUsecase.TIME_SERIES
+2025-11-24 23:02:27,436:INFO:version 3.3.2
+2025-11-24 23:02:27,436:INFO:Initializing setup()
+2025-11-24 23:02:27,436:INFO:self.USI: f9c3
+2025-11-24 23:02:27,436:INFO:self._variable_keys: {'log_plots_param', 'X_test', 'X_test_transformed', 'y_transformed', 'approach_type', 'X', 'seasonality_present', 'enforce_pi', 'significant_sps', 'enforce_exogenous', 'idx', 'memory', 'exp_name_log', 'exogenous_present', 'candidate_sps', 'fh', 'USI', 'y', 'X_train', 'n_jobs_param', 'significant_sps_no_harmonics', 'gpu_param', 'X_train_transformed', 'fold_generator', 'strictly_positive', 'y_test_transformed', 'y_train_transformed', 'data', '_ml_usecase', 'fold_param', 'html_param', 'model_engines', 'seed', 'y_test', 'index_type', 'logging_param', 'X_transformed', 'y_train', 'exp_id', 'all_sps_to_use', 'gpu_n_jobs_param', 'primary_sp_to_use', '_available_plots', 'pipeline'}
+2025-11-24 23:02:27,436:INFO:Checking environment
+2025-11-24 23:02:27,436:INFO:python_version: 3.10.6
+2025-11-24 23:02:27,436:INFO:python_build: ('tags/v3.10.6:9c7b4bd', 'Aug  1 2022 21:53:49')
+2025-11-24 23:02:27,436:INFO:machine: AMD64
+2025-11-24 23:02:27,436:INFO:platform: Windows-10-10.0.28000-SP0
+2025-11-24 23:02:27,437:INFO:Memory: svmem(total=16866885632, available=1488674816, percent=91.2, used=15378210816, free=1488674816)
+2025-11-24 23:02:27,437:INFO:Physical Core: 8
+2025-11-24 23:02:27,437:INFO:Logical Core: 16
+2025-11-24 23:02:27,437:INFO:Checking libraries
+2025-11-24 23:02:27,437:INFO:System:
+2025-11-24 23:02:27,438:INFO:    python: 3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)]
+2025-11-24 23:02:27,438:INFO:executable: C:\Users\iljas\Desktop\machine learning\machine learning aws\Project\venv\Scripts\python.exe
+2025-11-24 23:02:27,438:INFO:   machine: Windows-10-10.0.28000-SP0
+2025-11-24 23:02:27,438:INFO:PyCaret required dependencies:
+2025-11-24 23:02:30,811:INFO:                 pip: 22.2.1
+2025-11-24 23:02:30,811:INFO:          setuptools: 80.9.0
+2025-11-24 23:02:30,811:INFO:             pycaret: 3.3.2
+2025-11-24 23:02:30,811:INFO:             IPython: 8.37.0
+2025-11-24 23:02:30,811:INFO:          ipywidgets: 8.1.8
+2025-11-24 23:02:30,811:INFO:                tqdm: 4.67.1
+2025-11-24 23:02:30,811:INFO:               numpy: 1.26.4
+2025-11-24 23:02:30,811:INFO:              pandas: 2.1.4
+2025-11-24 23:02:30,811:INFO:              jinja2: 3.1.6
+2025-11-24 23:02:30,811:INFO:               scipy: 1.11.4
+2025-11-24 23:02:30,811:INFO:              joblib: 1.3.2
+2025-11-24 23:02:30,811:INFO:             sklearn: 1.4.2
+2025-11-24 23:02:30,811:INFO:                pyod: 2.0.5
+2025-11-24 23:02:30,811:INFO:            imblearn: 0.14.0
+2025-11-24 23:02:30,811:INFO:   category_encoders: 2.7.0
+2025-11-24 23:02:30,811:INFO:            lightgbm: 4.6.0
+2025-11-24 23:02:30,811:INFO:               numba: 0.62.1
+2025-11-24 23:02:30,811:INFO:            requests: 2.32.5
+2025-11-24 23:02:30,811:INFO:          matplotlib: 3.7.5
+2025-11-24 23:02:30,811:INFO:          scikitplot: 0.3.7
+2025-11-24 23:02:30,811:INFO:         yellowbrick: 1.5
+2025-11-24 23:02:30,811:INFO:              plotly: 5.24.1
+2025-11-24 23:02:30,811:INFO:    plotly-resampler: Not installed
+2025-11-24 23:02:30,811:INFO:             kaleido: 1.2.0
+2025-11-24 23:02:30,811:INFO:           schemdraw: 0.15
+2025-11-24 23:02:30,811:INFO:         statsmodels: 0.14.5
+2025-11-24 23:02:30,812:INFO:              sktime: 0.26.0
+2025-11-24 23:02:30,812:INFO:               tbats: 1.1.3
+2025-11-24 23:02:30,812:INFO:            pmdarima: 2.0.4
+2025-11-24 23:02:30,812:INFO:              psutil: 7.1.1
+2025-11-24 23:02:30,812:INFO:          markupsafe: 3.0.3
+2025-11-24 23:02:30,812:INFO:             pickle5: Not installed
+2025-11-24 23:02:30,812:INFO:         cloudpickle: 3.1.2
+2025-11-24 23:02:30,812:INFO:         deprecation: 2.1.0
+2025-11-24 23:02:30,812:INFO:              xxhash: 3.6.0
+2025-11-24 23:02:30,812:INFO:           wurlitzer: Not installed
+2025-11-24 23:02:30,812:INFO:PyCaret optional dependencies:
+2025-11-24 23:02:47,082:INFO:                shap: 0.44.1
+2025-11-24 23:02:47,082:INFO:           interpret: 0.7.3
+2025-11-24 23:02:47,082:INFO:                umap: 0.5.7
+2025-11-24 23:02:47,082:INFO:     ydata_profiling: 4.18.0
+2025-11-24 23:02:47,082:INFO:  explainerdashboard: 0.5.1
+2025-11-24 23:02:47,082:INFO:             autoviz: Not installed
+2025-11-24 23:02:47,082:INFO:           fairlearn: 0.7.0
+2025-11-24 23:02:47,083:INFO:          deepchecks: Not installed
+2025-11-24 23:02:47,083:INFO:             xgboost: 3.1.2
+2025-11-24 23:02:47,083:INFO:            catboost: 1.2.8
+2025-11-24 23:02:47,083:INFO:              kmodes: 0.12.2
+2025-11-24 23:02:47,083:INFO:             mlxtend: 0.23.4
+2025-11-24 23:02:47,083:INFO:       statsforecast: 1.5.0
+2025-11-24 23:02:47,083:INFO:        tune_sklearn: Not installed
+2025-11-24 23:02:47,083:INFO:                 ray: Not installed
+2025-11-24 23:02:47,083:INFO:            hyperopt: 0.2.7
+2025-11-24 23:02:47,083:INFO:              optuna: 4.6.0
+2025-11-24 23:02:47,083:INFO:               skopt: 0.10.2
+2025-11-24 23:02:47,083:INFO:              mlflow: 3.6.0
+2025-11-24 23:02:47,083:INFO:              gradio: 6.0.0
+2025-11-24 23:02:47,083:INFO:             fastapi: 0.122.0
+2025-11-24 23:02:47,083:INFO:             uvicorn: 0.38.0
+2025-11-24 23:02:47,083:INFO:              m2cgen: 0.10.0
+2025-11-24 23:02:47,083:INFO:           evidently: 0.4.40
+2025-11-24 23:02:47,083:INFO:               fugue: 0.8.7
+2025-11-24 23:02:47,083:INFO:           streamlit: 1.51.0
+2025-11-24 23:02:47,083:INFO:             prophet: Not installed
+2025-11-24 23:02:47,083:INFO:None
+2025-11-24 23:02:47,144:INFO:Set Forecast Horizon.
+2025-11-24 23:02:47,147:INFO:Set up Train-Test Splits.
+2025-11-24 23:03:17,432:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-11-24 23:03:18,667:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:03:18,668:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:03:18,668:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:03:18,668:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:03:19,925:INFO:PyCaret TSForecastingExperiment
+2025-11-24 23:03:19,925:INFO:Logging name: ts-default-name
+2025-11-24 23:03:19,926:INFO:ML Usecase: MLUsecase.TIME_SERIES
+2025-11-24 23:03:19,926:INFO:version 3.3.2
+2025-11-24 23:03:19,926:INFO:Initializing setup()
+2025-11-24 23:03:19,926:INFO:self.USI: aedf
+2025-11-24 23:03:19,926:INFO:self._variable_keys: {'y_train_transformed', 'X_train', 'pipeline', 'seed', 'y', 'X_test_transformed', 'exp_id', 'significant_sps_no_harmonics', 'y_test_transformed', 'fh', 'enforce_pi', 'significant_sps', 'fold_generator', 'gpu_n_jobs_param', 'X_transformed', '_available_plots', 'candidate_sps', 'model_engines', 'all_sps_to_use', 'y_test', 'fold_param', 'seasonality_present', 'y_train', 'log_plots_param', 'approach_type', 'memory', 'idx', 'enforce_exogenous', 'USI', 'html_param', 'X_test', '_ml_usecase', 'data', 'gpu_param', 'X_train_transformed', 'y_transformed', 'logging_param', 'n_jobs_param', 'X', 'index_type', 'exp_name_log', 'primary_sp_to_use', 'exogenous_present', 'strictly_positive'}
+2025-11-24 23:03:19,926:INFO:Checking environment
+2025-11-24 23:03:19,926:INFO:python_version: 3.10.6
+2025-11-24 23:03:19,926:INFO:python_build: ('tags/v3.10.6:9c7b4bd', 'Aug  1 2022 21:53:49')
+2025-11-24 23:03:19,926:INFO:machine: AMD64
+2025-11-24 23:03:19,926:INFO:platform: Windows-10-10.0.28000-SP0
+2025-11-24 23:03:19,927:INFO:Memory: svmem(total=16866885632, available=780115968, percent=95.4, used=16086769664, free=780115968)
+2025-11-24 23:03:19,927:INFO:Physical Core: 8
+2025-11-24 23:03:19,928:INFO:Logical Core: 16
+2025-11-24 23:03:19,928:INFO:Checking libraries
+2025-11-24 23:03:19,928:INFO:System:
+2025-11-24 23:03:19,928:INFO:    python: 3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)]
+2025-11-24 23:03:19,929:INFO:executable: C:\Users\iljas\Desktop\machine learning\machine learning aws\Project\venv\Scripts\python.exe
+2025-11-24 23:03:19,929:INFO:   machine: Windows-10-10.0.28000-SP0
+2025-11-24 23:03:19,929:INFO:PyCaret required dependencies:
+2025-11-24 23:03:20,218:INFO:                 pip: 22.2.1
+2025-11-24 23:03:20,218:INFO:          setuptools: 80.9.0
+2025-11-24 23:03:20,218:INFO:             pycaret: 3.3.2
+2025-11-24 23:03:20,218:INFO:             IPython: 8.37.0
+2025-11-24 23:03:20,218:INFO:          ipywidgets: 8.1.8
+2025-11-24 23:03:20,218:INFO:                tqdm: 4.67.1
+2025-11-24 23:03:20,218:INFO:               numpy: 1.26.4
+2025-11-24 23:03:20,218:INFO:              pandas: 2.1.4
+2025-11-24 23:03:20,218:INFO:              jinja2: 3.1.6
+2025-11-24 23:03:20,218:INFO:               scipy: 1.11.4
+2025-11-24 23:03:20,218:INFO:              joblib: 1.3.2
+2025-11-24 23:03:20,218:INFO:             sklearn: 1.4.2
+2025-11-24 23:03:20,218:INFO:                pyod: 2.0.5
+2025-11-24 23:03:20,218:INFO:            imblearn: 0.14.0
+2025-11-24 23:03:20,218:INFO:   category_encoders: 2.7.0
+2025-11-24 23:03:20,219:INFO:            lightgbm: 4.6.0
+2025-11-24 23:03:20,219:INFO:               numba: 0.62.1
+2025-11-24 23:03:20,219:INFO:            requests: 2.32.5
+2025-11-24 23:03:20,219:INFO:          matplotlib: 3.7.5
+2025-11-24 23:03:20,219:INFO:          scikitplot: 0.3.7
+2025-11-24 23:03:20,219:INFO:         yellowbrick: 1.5
+2025-11-24 23:03:20,219:INFO:              plotly: 5.24.1
+2025-11-24 23:03:20,219:INFO:    plotly-resampler: Not installed
+2025-11-24 23:03:20,219:INFO:             kaleido: 1.2.0
+2025-11-24 23:03:20,219:INFO:           schemdraw: 0.15
+2025-11-24 23:03:20,219:INFO:         statsmodels: 0.14.5
+2025-11-24 23:03:20,219:INFO:              sktime: 0.26.0
+2025-11-24 23:03:20,219:INFO:               tbats: 1.1.3
+2025-11-24 23:03:20,219:INFO:            pmdarima: 2.0.4
+2025-11-24 23:03:20,219:INFO:              psutil: 7.1.1
+2025-11-24 23:03:20,219:INFO:          markupsafe: 3.0.3
+2025-11-24 23:03:20,219:INFO:             pickle5: Not installed
+2025-11-24 23:03:20,219:INFO:         cloudpickle: 3.1.2
+2025-11-24 23:03:20,219:INFO:         deprecation: 2.1.0
+2025-11-24 23:03:20,219:INFO:              xxhash: 3.6.0
+2025-11-24 23:03:20,219:INFO:           wurlitzer: Not installed
+2025-11-24 23:03:20,219:INFO:PyCaret optional dependencies:
+2025-11-24 23:03:24,037:INFO:                shap: 0.44.1
+2025-11-24 23:03:24,037:INFO:           interpret: 0.7.3
+2025-11-24 23:03:24,037:INFO:                umap: 0.5.7
+2025-11-24 23:03:24,038:INFO:     ydata_profiling: 4.18.0
+2025-11-24 23:03:24,038:INFO:  explainerdashboard: 0.5.1
+2025-11-24 23:03:24,038:INFO:             autoviz: Not installed
+2025-11-24 23:03:24,038:INFO:           fairlearn: 0.7.0
+2025-11-24 23:03:24,038:INFO:          deepchecks: Not installed
+2025-11-24 23:03:24,038:INFO:             xgboost: 3.1.2
+2025-11-24 23:03:24,038:INFO:            catboost: 1.2.8
+2025-11-24 23:03:24,038:INFO:              kmodes: 0.12.2
+2025-11-24 23:03:24,038:INFO:             mlxtend: 0.23.4
+2025-11-24 23:03:24,038:INFO:       statsforecast: 1.5.0
+2025-11-24 23:03:24,038:INFO:        tune_sklearn: Not installed
+2025-11-24 23:03:24,038:INFO:                 ray: Not installed
+2025-11-24 23:03:24,038:INFO:            hyperopt: 0.2.7
+2025-11-24 23:03:24,038:INFO:              optuna: 4.6.0
+2025-11-24 23:03:24,038:INFO:               skopt: 0.10.2
+2025-11-24 23:03:24,038:INFO:              mlflow: 3.6.0
+2025-11-24 23:03:24,038:INFO:              gradio: 6.0.0
+2025-11-24 23:03:24,038:INFO:             fastapi: 0.122.0
+2025-11-24 23:03:24,039:INFO:             uvicorn: 0.38.0
+2025-11-24 23:03:24,039:INFO:              m2cgen: 0.10.0
+2025-11-24 23:03:24,039:INFO:           evidently: 0.4.40
+2025-11-24 23:03:24,039:INFO:               fugue: 0.8.7
+2025-11-24 23:03:24,039:INFO:           streamlit: 1.51.0
+2025-11-24 23:03:24,039:INFO:             prophet: Not installed
+2025-11-24 23:03:24,039:INFO:None
+2025-11-24 23:03:24,081:INFO:Set Forecast Horizon.
+2025-11-24 23:03:24,083:INFO:Set up Train-Test Splits.
+2025-11-24 23:05:45,696:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-11-24 23:05:46,918:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:05:46,919:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:05:46,919:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:05:46,919:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:05:47,788:INFO:Initializing load_model()
+2025-11-24 23:05:47,788:INFO:load_model(model_name=./dataset_demanddata/best_model, platform=None, authentication=None, verbose=True)
+2025-11-24 23:05:47,840:INFO:Initializing load_model()
+2025-11-24 23:05:47,840:INFO:load_model(model_name=./dataset_price_paid_records/house_price_pycaret_model, platform=None, authentication=None, verbose=True)
+2025-11-24 23:05:48,213:WARNING:C:\Users\iljas\Desktop\machine learning\machine learning aws\Project\venv\lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.1', 'setuptools': '80.9.0', 'pycaret': '3.3.2', 'IPython': '8.37.0', 'ipywidgets': '8.1.8', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.5', 'imblearn': '0.14.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.62.1', 'requests': '2.32.5', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '1.2.0', 'schemdraw': '0.15', 'statsmodels': '0.14.5', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.1.1', 'markupsafe': '3.0.3', 'pickle5': 'Not installed', 'cloudpickle': '3.1.2', 'deprecation': '2.1.0', 'xxhash': '3.6.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.2.1', 'setuptools': '80.9.0', 'pycaret': '3.3.2', 'IPython': '8.29.0', 'ipywidgets': '8.1.8', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.5', 'imblearn': '0.14.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.62.1', 'requests': '2.32.5', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '1.2.0', 'schemdraw': '0.15', 'statsmodels': '0.14.5', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.1.2', 'deprecation': '2.1.0', 'xxhash': '3.6.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2025-11-24 23:08:23,681:INFO:Initializing load_model()
+2025-11-24 23:08:23,681:INFO:load_model(model_name=./dataset_demanddata/best_model, platform=None, authentication=None, verbose=True)
+2025-11-24 23:08:23,712:INFO:Initializing load_model()
+2025-11-24 23:08:23,712:INFO:load_model(model_name=./dataset_price_paid_records/house_price_pycaret_model, platform=None, authentication=None, verbose=True)
+2025-11-24 23:08:23,726:WARNING:C:\Users\iljas\Desktop\machine learning\machine learning aws\Project\venv\lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.1', 'setuptools': '80.9.0', 'pycaret': '3.3.2', 'IPython': '8.37.0', 'ipywidgets': '8.1.8', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.5', 'imblearn': '0.14.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.62.1', 'requests': '2.32.5', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '1.2.0', 'schemdraw': '0.15', 'statsmodels': '0.14.5', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.1.1', 'markupsafe': '3.0.3', 'pickle5': 'Not installed', 'cloudpickle': '3.1.2', 'deprecation': '2.1.0', 'xxhash': '3.6.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.2.1', 'setuptools': '80.9.0', 'pycaret': '3.3.2', 'IPython': '8.29.0', 'ipywidgets': '8.1.8', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.5', 'imblearn': '0.14.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.62.1', 'requests': '2.32.5', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '1.2.0', 'schemdraw': '0.15', 'statsmodels': '0.14.5', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.1.2', 'deprecation': '2.1.0', 'xxhash': '3.6.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2025-11-24 23:09:11,540:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-11-24 23:09:12,796:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:09:12,797:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:09:12,797:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:09:12,797:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:09:13,729:INFO:Initializing load_model()
+2025-11-24 23:09:13,729:INFO:load_model(model_name=./dataset_demanddata/best_model, platform=None, authentication=None, verbose=True)
+2025-11-24 23:09:13,758:INFO:Initializing load_model()
+2025-11-24 23:09:13,758:INFO:load_model(model_name=./dataset_price_paid_records/house_price_pycaret_model, platform=None, authentication=None, verbose=True)
+2025-11-24 23:09:14,088:WARNING:C:\Users\iljas\Desktop\machine learning\machine learning aws\Project\venv\lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.1', 'setuptools': '80.9.0', 'pycaret': '3.3.2', 'IPython': '8.37.0', 'ipywidgets': '8.1.8', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.5', 'imblearn': '0.14.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.62.1', 'requests': '2.32.5', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '1.2.0', 'schemdraw': '0.15', 'statsmodels': '0.14.5', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.1.1', 'markupsafe': '3.0.3', 'pickle5': 'Not installed', 'cloudpickle': '3.1.2', 'deprecation': '2.1.0', 'xxhash': '3.6.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.2.1', 'setuptools': '80.9.0', 'pycaret': '3.3.2', 'IPython': '8.29.0', 'ipywidgets': '8.1.8', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.5', 'imblearn': '0.14.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.62.1', 'requests': '2.32.5', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '1.2.0', 'schemdraw': '0.15', 'statsmodels': '0.14.5', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.1.2', 'deprecation': '2.1.0', 'xxhash': '3.6.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2025-11-24 23:09:28,327:INFO:Initializing predict_model()
+2025-11-24 23:09:28,328:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000026040886B30>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['year', 'month'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['property_type', 'old_or_new',
+                                             'duration', 'town_or_city',
+                                             'district', 'county'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 Transform...
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['town_or_city', 'district',
+                                             'county'],
+                                    transformer=TargetEncoder(cols=['town_or_city',
+                                                                    'district',
+                                                                    'county'],
+                                                              handle_missing='return_nan'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model', LGBMRegressor(n_jobs=-1, random_state=42))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000026042B83EB0>)
+2025-11-24 23:09:28,328:INFO:Checking exceptions
+2025-11-24 23:09:28,328:INFO:Preloading libraries
+2025-11-24 23:09:28,328:INFO:Set up data.
+2025-11-24 23:09:28,332:INFO:Set up index.
+2025-11-24 23:12:47,344:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-11-24 23:12:48,866:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:12:48,866:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:12:48,866:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:12:48,866:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:12:49,696:INFO:Initializing load_model()
+2025-11-24 23:12:49,696:INFO:load_model(model_name=./dataset_demanddata/best_model, platform=None, authentication=None, verbose=True)
+2025-11-24 23:12:49,751:INFO:Initializing load_model()
+2025-11-24 23:12:49,751:INFO:load_model(model_name=./dataset_price_paid_records/house_price_pycaret_model, platform=None, authentication=None, verbose=True)
+2025-11-24 23:12:50,168:WARNING:C:\Users\iljas\Desktop\machine learning\machine learning aws\Project\venv\lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.1', 'setuptools': '80.9.0', 'pycaret': '3.3.2', 'IPython': '8.37.0', 'ipywidgets': '8.1.8', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.5', 'imblearn': '0.14.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.62.1', 'requests': '2.32.5', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '1.2.0', 'schemdraw': '0.15', 'statsmodels': '0.14.5', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.1.1', 'markupsafe': '3.0.3', 'pickle5': 'Not installed', 'cloudpickle': '3.1.2', 'deprecation': '2.1.0', 'xxhash': '3.6.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.2.1', 'setuptools': '80.9.0', 'pycaret': '3.3.2', 'IPython': '8.29.0', 'ipywidgets': '8.1.8', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.5', 'imblearn': '0.14.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.62.1', 'requests': '2.32.5', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '1.2.0', 'schemdraw': '0.15', 'statsmodels': '0.14.5', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.1.2', 'deprecation': '2.1.0', 'xxhash': '3.6.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2025-11-24 23:13:03,031:INFO:Initializing predict_model()
+2025-11-24 23:13:03,031:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000023D6C6825C0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['year', 'month'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['property_type', 'old_or_new',
+                                             'duration', 'town_or_city',
+                                             'district', 'county'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 Transform...
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['town_or_city', 'district',
+                                             'county'],
+                                    transformer=TargetEncoder(cols=['town_or_city',
+                                                                    'district',
+                                                                    'county'],
+                                                              handle_missing='return_nan'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model', LGBMRegressor(n_jobs=-1, random_state=42))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000023D6E51BF40>)
+2025-11-24 23:13:03,031:INFO:Checking exceptions
+2025-11-24 23:13:03,031:INFO:Preloading libraries
+2025-11-24 23:13:03,032:INFO:Set up data.
+2025-11-24 23:13:03,035:INFO:Set up index.
+2025-11-24 23:13:09,205:INFO:Initializing predict_model()
+2025-11-24 23:13:09,205:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000023D6C652E30>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['year', 'month'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['property_type', 'old_or_new',
+                                             'duration', 'town_or_city',
+                                             'district', 'county'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 Transform...
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['town_or_city', 'district',
+                                             'county'],
+                                    transformer=TargetEncoder(cols=['town_or_city',
+                                                                    'district',
+                                                                    'county'],
+                                                              handle_missing='return_nan'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model', LGBMRegressor(n_jobs=-1, random_state=42))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000023D6E518670>)
+2025-11-24 23:13:09,205:INFO:Checking exceptions
+2025-11-24 23:13:09,205:INFO:Preloading libraries
+2025-11-24 23:13:09,206:INFO:Set up data.
+2025-11-24 23:13:09,208:INFO:Set up index.
+2025-11-24 23:13:12,445:INFO:Initializing predict_model()
+2025-11-24 23:13:12,445:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000023D6E50A3B0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['year', 'month'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['property_type', 'old_or_new',
+                                             'duration', 'town_or_city',
+                                             'district', 'county'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 Transform...
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['town_or_city', 'district',
+                                             'county'],
+                                    transformer=TargetEncoder(cols=['town_or_city',
+                                                                    'district',
+                                                                    'county'],
+                                                              handle_missing='return_nan'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model', LGBMRegressor(n_jobs=-1, random_state=42))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000023D6C61F520>)
+2025-11-24 23:13:12,446:INFO:Checking exceptions
+2025-11-24 23:13:12,446:INFO:Preloading libraries
+2025-11-24 23:13:12,446:INFO:Set up data.
+2025-11-24 23:13:12,449:INFO:Set up index.
+2025-11-24 23:14:13,354:INFO:Initializing predict_model()
+2025-11-24 23:14:13,354:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000023D27E144F0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['year', 'month'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['property_type', 'old_or_new',
+                                             'duration', 'town_or_city',
+                                             'district', 'county'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 Transform...
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['town_or_city', 'district',
+                                             'county'],
+                                    transformer=TargetEncoder(cols=['town_or_city',
+                                                                    'district',
+                                                                    'county'],
+                                                              handle_missing='return_nan'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model', LGBMRegressor(n_jobs=-1, random_state=42))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000023D6E51B7F0>)
+2025-11-24 23:14:13,354:INFO:Checking exceptions
+2025-11-24 23:14:13,354:INFO:Preloading libraries
+2025-11-24 23:14:13,354:INFO:Set up data.
+2025-11-24 23:14:13,358:INFO:Set up index.
+2025-11-24 23:14:16,593:INFO:Initializing predict_model()
+2025-11-24 23:14:16,593:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000023D27D56350>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['year', 'month'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['property_type', 'old_or_new',
+                                             'duration', 'town_or_city',
+                                             'district', 'county'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 Transform...
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['town_or_city', 'district',
+                                             'county'],
+                                    transformer=TargetEncoder(cols=['town_or_city',
+                                                                    'district',
+                                                                    'county'],
+                                                              handle_missing='return_nan'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model', LGBMRegressor(n_jobs=-1, random_state=42))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000023D6E51B760>)
+2025-11-24 23:14:16,593:INFO:Checking exceptions
+2025-11-24 23:14:16,594:INFO:Preloading libraries
+2025-11-24 23:14:16,594:INFO:Set up data.
+2025-11-24 23:14:16,597:INFO:Set up index.
+2025-11-24 23:15:39,315:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-11-24 23:15:40,552:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:15:40,552:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:15:40,553:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:15:40,553:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:15:41,366:INFO:Initializing load_model()
+2025-11-24 23:15:41,366:INFO:load_model(model_name=house_price_pycaret_model, platform=None, authentication=None, verbose=True)
+2025-11-24 23:16:35,681:INFO:Initializing load_model()
+2025-11-24 23:16:35,681:INFO:load_model(model_name=best_model, platform=None, authentication=None, verbose=True)
+2025-11-24 23:17:47,614:INFO:Initializing load_model()
+2025-11-24 23:17:47,615:INFO:load_model(model_name=house_price_pycaret_model, platform=None, authentication=None, verbose=True)
+2025-11-24 23:18:37,960:INFO:Initializing load_model()
+2025-11-24 23:18:37,960:INFO:load_model(model_name=house_price_pycaret_model, platform=None, authentication=None, verbose=True)
+2025-11-24 23:18:42,501:INFO:Initializing load_model()
+2025-11-24 23:18:42,501:INFO:load_model(model_name=house_price_pycaret_model, platform=None, authentication=None, verbose=True)
+2025-11-24 23:19:08,903:INFO:Initializing load_model()
+2025-11-24 23:19:08,903:INFO:load_model(model_name=house_price_pycaret_model, platform=None, authentication=None, verbose=True)
+2025-11-24 23:19:11,258:INFO:Initializing load_model()
+2025-11-24 23:19:11,259:INFO:load_model(model_name=house_price_pycaret_model, platform=None, authentication=None, verbose=True)
+2025-11-24 23:19:24,514:INFO:Initializing load_model()
+2025-11-24 23:19:24,514:INFO:load_model(model_name=./dataset_demanddata/best_model, platform=None, authentication=None, verbose=True)
+2025-11-24 23:19:24,576:INFO:Initializing load_model()
+2025-11-24 23:19:24,576:INFO:load_model(model_name=./dataset_price_paid_records/house_price_pycaret_model, platform=None, authentication=None, verbose=True)
+2025-11-24 23:19:25,050:WARNING:C:\Users\iljas\Desktop\machine learning\machine learning aws\Project\venv\lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.1', 'setuptools': '80.9.0', 'pycaret': '3.3.2', 'IPython': '8.37.0', 'ipywidgets': '8.1.8', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.5', 'imblearn': '0.14.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.62.1', 'requests': '2.32.5', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '1.2.0', 'schemdraw': '0.15', 'statsmodels': '0.14.5', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.1.1', 'markupsafe': '3.0.3', 'pickle5': 'Not installed', 'cloudpickle': '3.1.2', 'deprecation': '2.1.0', 'xxhash': '3.6.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.2.1', 'setuptools': '80.9.0', 'pycaret': '3.3.2', 'IPython': '8.29.0', 'ipywidgets': '8.1.8', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.5', 'imblearn': '0.14.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.62.1', 'requests': '2.32.5', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '1.2.0', 'schemdraw': '0.15', 'statsmodels': '0.14.5', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.1.2', 'deprecation': '2.1.0', 'xxhash': '3.6.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2025-11-24 23:37:08,092:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-11-24 23:37:09,635:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:37:09,636:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:37:09,636:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:37:09,636:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:37:10,601:INFO:Initializing load_model()
+2025-11-24 23:37:10,602:INFO:load_model(model_name=./dataset_demanddata/best_model, platform=None, authentication=None, verbose=True)
+2025-11-24 23:37:10,646:INFO:Initializing load_model()
+2025-11-24 23:37:10,646:INFO:load_model(model_name=./dataset_price_paid_records/house_price_pycaret_model, platform=None, authentication=None, verbose=True)
+2025-11-24 23:37:11,156:WARNING:C:\Users\iljas\Desktop\machine learning\machine learning aws\Project\venv\lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.1', 'setuptools': '80.9.0', 'pycaret': '3.3.2', 'IPython': '8.37.0', 'ipywidgets': '8.1.8', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.5', 'imblearn': '0.14.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.62.1', 'requests': '2.32.5', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '1.2.0', 'schemdraw': '0.15', 'statsmodels': '0.14.5', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.1.1', 'markupsafe': '3.0.3', 'pickle5': 'Not installed', 'cloudpickle': '3.1.2', 'deprecation': '2.1.0', 'xxhash': '3.6.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.2.1', 'setuptools': '80.9.0', 'pycaret': '3.3.2', 'IPython': '8.29.0', 'ipywidgets': '8.1.8', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.5', 'imblearn': '0.14.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.62.1', 'requests': '2.32.5', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '1.2.0', 'schemdraw': '0.15', 'statsmodels': '0.14.5', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.1.2', 'deprecation': '2.1.0', 'xxhash': '3.6.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2025-11-24 23:37:35,362:INFO:Initializing load_model()
+2025-11-24 23:37:35,363:INFO:load_model(model_name=./dataset_demanddata/different_save_best_model, platform=None, authentication=None, verbose=True)
+2025-11-24 23:37:35,397:INFO:Initializing load_model()
+2025-11-24 23:37:35,397:INFO:load_model(model_name=./dataset_price_paid_records/house_price_pycaret_model, platform=None, authentication=None, verbose=True)
+2025-11-24 23:37:35,410:WARNING:C:\Users\iljas\Desktop\machine learning\machine learning aws\Project\venv\lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.1', 'setuptools': '80.9.0', 'pycaret': '3.3.2', 'IPython': '8.37.0', 'ipywidgets': '8.1.8', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.5', 'imblearn': '0.14.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.62.1', 'requests': '2.32.5', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '1.2.0', 'schemdraw': '0.15', 'statsmodels': '0.14.5', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.1.1', 'markupsafe': '3.0.3', 'pickle5': 'Not installed', 'cloudpickle': '3.1.2', 'deprecation': '2.1.0', 'xxhash': '3.6.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.2.1', 'setuptools': '80.9.0', 'pycaret': '3.3.2', 'IPython': '8.29.0', 'ipywidgets': '8.1.8', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.5', 'imblearn': '0.14.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.62.1', 'requests': '2.32.5', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '1.2.0', 'schemdraw': '0.15', 'statsmodels': '0.14.5', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.1.2', 'deprecation': '2.1.0', 'xxhash': '3.6.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2025-11-24 23:38:02,010:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-11-24 23:38:03,185:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:38:03,185:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:38:03,185:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:38:03,185:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-11-24 23:38:04,042:INFO:Initializing load_model()
+2025-11-24 23:38:04,042:INFO:load_model(model_name=./dataset_demanddata/different_save_best_model, platform=None, authentication=None, verbose=True)
+2025-11-24 23:38:04,076:INFO:Initializing load_model()
+2025-11-24 23:38:04,076:INFO:load_model(model_name=./dataset_price_paid_records/house_price_pycaret_model, platform=None, authentication=None, verbose=True)
+2025-11-24 23:38:04,380:WARNING:C:\Users\iljas\Desktop\machine learning\machine learning aws\Project\venv\lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.1', 'setuptools': '80.9.0', 'pycaret': '3.3.2', 'IPython': '8.37.0', 'ipywidgets': '8.1.8', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.5', 'imblearn': '0.14.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.62.1', 'requests': '2.32.5', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '1.2.0', 'schemdraw': '0.15', 'statsmodels': '0.14.5', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.1.1', 'markupsafe': '3.0.3', 'pickle5': 'Not installed', 'cloudpickle': '3.1.2', 'deprecation': '2.1.0', 'xxhash': '3.6.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.2.1', 'setuptools': '80.9.0', 'pycaret': '3.3.2', 'IPython': '8.29.0', 'ipywidgets': '8.1.8', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.5', 'imblearn': '0.14.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.62.1', 'requests': '2.32.5', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '1.2.0', 'schemdraw': '0.15', 'statsmodels': '0.14.5', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.1.2', 'deprecation': '2.1.0', 'xxhash': '3.6.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.10.6', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2025-11-24 23:43:06,136:INFO:Initializing predict_model()
+2025-11-24 23:43:06,136:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001FCB02CCF70>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['year', 'month'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['property_type', 'old_or_new',
+                                             'duration', 'town_or_city',
+                                             'district', 'county'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 Transform...
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['town_or_city', 'district',
+                                             'county'],
+                                    transformer=TargetEncoder(cols=['town_or_city',
+                                                                    'district',
+                                                                    'county'],
+                                                              handle_missing='return_nan'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model', LGBMRegressor(n_jobs=-1, random_state=42))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001FCB0A7F6D0>)
+2025-11-24 23:43:06,138:INFO:Checking exceptions
+2025-11-24 23:43:06,138:INFO:Preloading libraries
+2025-11-24 23:43:06,139:INFO:Set up data.
+2025-11-24 23:43:06,158:INFO:Set up index.
+2025-11-24 23:43:10,484:INFO:Initializing predict_model()
+2025-11-24 23:43:10,484:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001FCB02CCB80>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['year', 'month'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['property_type', 'old_or_new',
+                                             'duration', 'town_or_city',
+                                             'district', 'county'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 Transform...
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['town_or_city', 'district',
+                                             'county'],
+                                    transformer=TargetEncoder(cols=['town_or_city',
+                                                                    'district',
+                                                                    'county'],
+                                                              handle_missing='return_nan'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model', LGBMRegressor(n_jobs=-1, random_state=42))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001FCB0A7D090>)
+2025-11-24 23:43:10,484:INFO:Checking exceptions
+2025-11-24 23:43:10,484:INFO:Preloading libraries
+2025-11-24 23:43:10,485:INFO:Set up data.
+2025-11-24 23:43:10,489:INFO:Set up index.

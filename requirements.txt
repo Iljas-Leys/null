@@ -1,2 +1,3 @@
 uvicorn
 streamlit
+pycaret[full]
