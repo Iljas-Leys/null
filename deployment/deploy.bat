@@ -1,1 +1,1 @@
-ssh user@192.168.0.200 "sudo ~/machinelearning/null/deployment/deploy.sh"
+ssh user@192.168.0.200 "echo user | sudo -S ~/machinelearning/null/deployment/deploy.sh"
