@@ -7,14 +7,7 @@ import streamlit as st
 from pycaret.time_series import load_model as ts_load_model, predict_model as ts_predict_model
 from pycaret.regression import load_model as reg_load_model, predict_model as reg_predict_model
 
-
-# ---------- CONFIG ----------
-
-# Point this to your RAW demand CSV (with settlement_date,...)
-DEMAND_DATA_PATH = "./dataset_demanddata/cleaned_data.csv"  # <- change name if needed
-
-
-# ---------- HELPERS ----------
+DEMAND_DATA_PATH = "./dataset_demanddata/cleaned_data.csv"
 
 def strip_pkl(path: str) -> str:
     if path.lower().endswith(".pkl"):
@@ -35,37 +28,22 @@ def load_models():
 
 @st.cache_data
 def load_demand_data() -> pd.DataFrame:
-    """
-    Load the demand data and return a MONTHLY dataframe with:
-    year, month, nd, tsd, england_wales_demand, embedded_wind_generation, ...
-
-    If the file already has year/month, we use it.
-    If it only has settlement_date, we aggregate to monthly.
-    """
     df = pd.read_csv(DEMAND_DATA_PATH)
-
-    # Normalize column names
     df.columns = [c.strip().lower() for c in df.columns]
-
-    # Case 1: already monthly with year/month
     if "year" in df.columns and "month" in df.columns:
         return df
 
-    # Case 2: raw half-hourly data with settlement_date
     if "settlement_date" not in df.columns:
         raise KeyError(
             "Demand CSV must contain either 'year'/'month' or 'settlement_date'. "
             f"Found columns: {list(df.columns)}"
         )
 
-    # Derive year/month and aggregate by month
     df["settlement_date"] = pd.to_datetime(df["settlement_date"])
     df["year"] = df["settlement_date"].dt.year
     df["month"] = df["settlement_date"].dt.month
 
-    # Group by year, month and take mean of everything else
     group_cols = ["year", "month"]
-    # we don't want to aggregate the date itself
     agg_cols = [c for c in df.columns if c not in group_cols + ["settlement_date"]]
 
     df_monthly = (
@@ -74,20 +52,10 @@ def load_demand_data() -> pd.DataFrame:
         .reset_index()
     )
 
-    # Columns now look like:
-    # year, month, settlement_period, nd, tsd, england_wales_demand, ...
     return df_monthly
 
 
 def build_future_exog(df_monthly: pd.DataFrame, horizon: int) -> pd.DataFrame:
-    """
-    Build a simple future exogenous (X) DataFrame for ARIMAX forecasting.
-
-    Strategy:
-    - 'year' and 'month' are incremented like a calendar.
-    - All other exogenous variables keep their last observed value.
-    """
-
     df_monthly = df_monthly.copy()
     df_monthly.columns = [c.strip().lower() for c in df_monthly.columns]
 
@@ -142,9 +110,6 @@ def build_future_exog(df_monthly: pd.DataFrame, horizon: int) -> pd.DataFrame:
     future_exog = pd.DataFrame(rows).reset_index(drop=True)
     return future_exog
 
-
-# ---------- STREAMLIT UI ----------
-
 st.set_page_config(page_title="PyCaret Models Demo", layout="centered")
 
 st.title("PyCaret Inference App")
@@ -164,8 +129,6 @@ model_choice = st.sidebar.radio(
     "Choose a model",
     ["Electricity demand forecast", "House price prediction"],
 )
-
-# ---------- ELECTRICITY DEMAND FORECAST ----------
 
 if model_choice == "Electricity demand forecast":
     st.header("Electricity Demand Forecast")
@@ -216,8 +179,6 @@ if model_choice == "Electricity demand forecast":
 
         except Exception as e:
             st.error(f"Error during forecast: {e}")
-
-# ---------- HOUSE PRICE PREDICTION ----------
 
 elif model_choice == "House price prediction":
     st.header("House Price Prediction")
