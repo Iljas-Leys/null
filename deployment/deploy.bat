@@ -1,0 +1,1 @@
+ssh user@192.168.0.200 "~/machinelearning/null/deployment/deploy.sh"
