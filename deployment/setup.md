@@ -13,7 +13,7 @@ Description=machineLearning
 After=network.target
 [Service]
 WorkingDirectory=/home/user/machinelearning/null
-ExecStart=/home/user/machinelearning/null/venv/bin/uvicorn main:app --host 0.0.0.0 --port 8000
+ExecStart=/home/user/machinelearning/null/venv/bin/uvicorn app:app --host 0.0.0.0 --port 8000
 Restart=always
 User=user
 Group=user
