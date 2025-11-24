@@ -1,4 +1,4 @@
 cd ..
 git pull
 rm -r .venv
-python -m venv .venv
+python3 -m venv .venv
