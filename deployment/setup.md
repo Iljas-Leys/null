@@ -19,3 +19,6 @@ User=user
 Group=user
 [Install]
 WantedBy=multi-user.target
+
+sudo systemctl enable machinelearning
+sudo systemctl start machinelearning
